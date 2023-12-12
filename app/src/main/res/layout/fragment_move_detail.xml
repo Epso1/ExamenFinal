@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="move"
+            type="com.example.examenfinal.models.Move" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+
+        android:textSize="34sp"
+        android:background="#000000"
+        android:backgroundTint="@color/teal_200"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/movementLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/movementName"/>
+
+    <TextView
+        android:textSize="34sp"
+        android:background="#000000"
+        android:backgroundTint="@color/teal_200"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/movementName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movement Name"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/AccuracyLabel"
+        app:layout_constraintTop_toBottomOf="@id/movementLabel" />
+
+    <TextView
+        android:textSize="34sp"
+        android:background="#000000"
+        android:backgroundTint="@color/teal_200"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/AccuracyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accuracy"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movementName"
+        app:layout_constraintBottom_toTopOf="@id/Accuracy"/>
+
+    <TextView
+        android:textSize="34sp"
+        android:background="#000000"
+        android:backgroundTint="@color/teal_200"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/Accuracy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accuracy Number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/AccuracyLabel"
+        app:layout_constraintBottom_toTopOf="@id/pokemontLabel"/>
+
+    <TextView
+        android:textSize="34sp"
+        android:background="#000000"
+        android:backgroundTint="@color/teal_200"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/pokemontLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pokemon"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Accuracy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/pokemonList"/>
+
+    <TextView
+        android:textSize="34sp"
+        android:background="#000000"
+        android:backgroundTint="@color/teal_200"
+        android:textStyle="italic"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/pokemonList"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:text="Pokemon List"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pokemontLabel"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

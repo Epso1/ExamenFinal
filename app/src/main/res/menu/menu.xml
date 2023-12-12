@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_movimientos"
+        android:title="Listado de movimientos"/>
+
+
+    <item
+        android:id="@+id/nav_items"
+        android:title="Listado de ítems" />
+
+    <item
+        android:id="@+id/nav_aleatorio"
+        android:title="Ítem aleatorio" />
+
+</menu>
